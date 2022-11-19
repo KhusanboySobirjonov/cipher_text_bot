@@ -7,7 +7,7 @@ Amaliyot
 from shifr import is_num
 import telebot
 
-TOKEN = "5877375796:AAH_Jl0Glx6U7MHyeywR5oDJIwazmRuf6co"
+TOKEN = "" # bot tokeni yoziladi
 bot = telebot.TeleBot(token=TOKEN)
 
 @bot.message_handler(commands=["start"])
