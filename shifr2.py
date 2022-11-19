@@ -12,8 +12,8 @@ bot = telebot.TeleBot(token=TOKEN)
 
 @bot.message_handler(commands=["start"])
 def send_welcome(message):
-    xabar = f"Assalomu alaykum, {message.from_user.first_name} {message.from_user.last_name}\nShifrlovchi botiga xush kelibsiz!"
-    xabar += "\nMatningizni yuboring. (Avtomatik aniqlab olinadi)"
+    xabar = f"👋 Assalomu alaykum, {message.from_user.first_name} {message.from_user.last_name} 👤\n🤖 Cipher to Text botiga xush kelibsiz!"
+    xabar += "\nMatningizni yuboring. 🗒 \nMatningizni shifrdan chiqarish kerak bo'lsa, 🔐 shu tarzda botga tashlang : \ncipher\n1110011 1100001 1101100 1101111 1101101"
     bot.reply_to(message, xabar)
 
 
